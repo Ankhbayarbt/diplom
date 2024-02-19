@@ -17,16 +17,15 @@ class LoginForm extends StatelessWidget {
             // Email
             TextFormField(
               decoration: const InputDecoration(
-                  prefixIcon: Icon(Icons.directions),
-                  label: Text(ATexts.email)),
+                  prefixIcon: Icon(Icons.email), label: Text(ATexts.email)),
             ),
             const SizedBox(height: ASizes.spaceBtwInputFields),
             // Password
             TextFormField(
               decoration: const InputDecoration(
-                  prefixIcon: Icon(Icons.directions),
+                  prefixIcon: Icon(Icons.password),
                   label: Text(ATexts.password),
-                  suffixIcon: Icon(Icons.remove_red_eye)),
+                  suffixIcon: Icon(Icons.visibility_off)),
             ),
             const SizedBox(height: ASizes.spaceBtwInputFields / 2),
             // Remember me & Forget password
