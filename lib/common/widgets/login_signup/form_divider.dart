@@ -1,5 +1,4 @@
 import 'package:ecommerce/utils/constants/colors.dart';
-import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:ecommerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -25,7 +24,7 @@ class FormDivider extends StatelessWidget {
           ),
         ),
         Text(
-          ATexts.orSignInWith.capitalize!,
+          dividerText.capitalize!,
           style: Theme.of(context).textTheme.labelMedium,
         ),
         Flexible(

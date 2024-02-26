@@ -8,6 +8,10 @@ class ATexts {
   static const String loginTitle = "Login Title";
   static const String loginSubTitle = "Login SubTitle";
 
+  // Title
+  static const String signupTitle = "Login Title";
+  static const String signupSubTitle = "Login SubTitle";
+
   // OnBoarding
   static const String onBoardingTitle1 = "OnBoarding1";
   static const String onBoardingTitle2 = "OnBoarding2";
@@ -33,4 +37,29 @@ class ATexts {
   static const String verificationCode = "Verification Code";
   static const String resendEmail = "Resend email";
   static const String forgetPassword = "Forget password";
+  static const String phone = "Phone number";
+  static const String privacyPolicy = "Privacy Policy";
+  static const String termOfUse = "Term of Use";
+  static const String and = "and";
+
+  // Forget Password
+  static const String forgetPasswordTitle = "Forget Password Title";
+  static const String forgetPasswordSubtitle = "Forget Password SubTitle";
+  static const String submit = "Sumbit";
+
+  // Reset Password
+  static const String resetPasswordTitle = "Reset Password Title";
+  static const String resetPasswordSubtitle = "Reset Password SubTitle";
+
+  // Verify Email
+  static const String confirmEmail = "Verify Your Email Address";
+  static const String confirmEmailSubtitle = "Confirm Email Subtitle";
+
+  static const String continuee = "Continue";
+  static const String done = "Done";
+
+  // Success Screen
+  static const String yourAccountCreatedTitle = "Your Account Created";
+  static const String yourAccountCreatedSubTitle =
+      "Your Account Created Subtitle";
 }
