@@ -18,4 +18,6 @@ class AImages {
 
   // Success Screen Images
   static const String succesScreenImage = "assets/images/onBoardingImage1.png";
+
+  static const String docerAnimation = "assets/images/onBoardingImage1.png";
 }

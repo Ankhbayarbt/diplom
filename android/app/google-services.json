@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "927655894637",
+    "project_id": "heal-eb1ef",
+    "storage_bucket": "heal-eb1ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927655894637:android:7cc591896d6bdaabdc2964",
+        "android_client_info": {
+          "package_name": "com.example.ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927655894637-oegue2hobhr252u7b3hspes8u4tl2r9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGfNIdE5eJ-H01yVXTHOaEO61kCXWfDP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927655894637-oegue2hobhr252u7b3hspes8u4tl2r9k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "927655894637-f4e12nfp9h0439atpbpnesme50b6csh7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ecommerce"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

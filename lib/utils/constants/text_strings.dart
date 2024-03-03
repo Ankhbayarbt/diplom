@@ -9,8 +9,8 @@ class ATexts {
   static const String loginSubTitle = "Login SubTitle";
 
   // Title
-  static const String signupTitle = "Login Title";
-  static const String signupSubTitle = "Login SubTitle";
+  static const String signupTitle = "SignUp Title";
+  static const String signupSubTitle = "SignUp SubTitle";
 
   // OnBoarding
   static const String onBoardingTitle1 = "OnBoarding1";
