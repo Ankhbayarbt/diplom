@@ -1,4 +1,5 @@
 import 'package:ecommerce/features/app/screens/home/home.dart';
+import 'package:ecommerce/features/personalization/screens/profile/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -37,6 +38,6 @@ class NavigationController extends GetxController {
     const HomeScreen(),
     Container(color: Colors.amber),
     Container(color: Colors.amber),
-    Container(color: Colors.amber),
+    const ProfileScreen(),
   ];
 }

@@ -22,37 +22,37 @@ class ATexts {
   static const String onBoardingSubTitle3 = "OnBoarding Subtitle3";
 
   // Authentication Form Text
-  static const String firstName = "First Name";
-  static const String lastName = "Last Name";
-  static const String email = "Email";
-  static const String password = "Password";
-  static const String newPassword = "New Password";
+  static const String firstName = "Овог";
+  static const String lastName = "Нэр";
+  static const String email = "И-мэйл хаяг";
+  static const String password = "Нууц үг";
+  static const String newPassword = "Шинэ нууц үг";
   static const String userName = "Username";
-  static const String rememberMe = "Remember me";
-  static const String signin = "Sign in";
-  static const String createAccount = "Create account";
-  static const String orSignInWith = "or sign in with";
-  static const String orSignUpwith = "or sign up with";
-  static const String iAgreeTo = "I agree to";
-  static const String verificationCode = "Verification Code";
-  static const String resendEmail = "Resend email";
-  static const String forgetPassword = "Forget password";
-  static const String phone = "Phone number";
-  static const String privacyPolicy = "Privacy Policy";
+  static const String rememberMe = "Намайг санаарай";
+  static const String signin = "Нэвтрэх";
+  static const String createAccount = "Бүртгүүлэх";
+  static const String orSignInWith = "Эсвэл";
+  static const String orSignUpwith = "Эсвэл";
+  static const String iAgreeTo = "зөвшөөрөх";
+  static const String verificationCode = "Баталгаажуулах код";
+  static const String resendEmail = "Мейл дахин илгээх";
+  static const String forgetPassword = "Нууц үгээ мартсан?";
+  static const String phone = "Утасны дугаар";
+  static const String privacyPolicy = "Үйлчилгээний нөхцөл";
   static const String termOfUse = "Term of Use";
-  static const String and = "and";
+  static const String and = "бас";
 
   // Forget Password
   static const String forgetPasswordTitle = "Forget Password Title";
   static const String forgetPasswordSubtitle = "Forget Password SubTitle";
-  static const String submit = "Sumbit";
+  static const String submit = "Илгээх";
 
   // Reset Password
   static const String resetPasswordTitle = "Reset Password Title";
   static const String resetPasswordSubtitle = "Reset Password SubTitle";
 
   // Verify Email
-  static const String confirmEmail = "Verify Your Email Address";
+  static const String confirmEmail = "Мейл хаягаа баталгаажуулаарай";
   static const String confirmEmailSubtitle = "Confirm Email Subtitle";
 
   static const String continuee = "Continue";

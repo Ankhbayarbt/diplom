@@ -1,14 +1,14 @@
 class Validator {
   static String? validateEmptyText(String? fieldName, String? value) {
     if (value == null || value.isEmpty) {
-      return '$fieldName is required';
+      return '$fieldName хоосон байж болохгүй.';
     }
     return null;
   }
 
   static String? validateEmail(String? value) {
     if (value == null || value.isEmpty) {
-      return 'Email is required';
+      return 'Хоосон байж болохгүй.';
     }
 
     final emailRegExp = RegExp(
@@ -18,7 +18,7 @@ class Validator {
     );
 
     if (!emailRegExp.hasMatch(value)) {
-      return 'Email is not valid';
+      return 'И-мэйл хаяг алдаатай байна.';
     }
 
     return null;
@@ -26,23 +26,23 @@ class Validator {
 
   static String? validatePassword(String? value) {
     if (value == null || value.isEmpty) {
-      return 'Password is required';
+      return 'Хоосон байж болохгүй.';
     }
 
     if (value.length < 6) {
-      return 'Password is at least 6 characters';
+      return 'Хамгийн багадаа 6-н тэмдэгт шаардлагатай.';
     }
 
     if (!value.contains(RegExp(r'[0-9]'))) {
-      return 'Password must contain at least one number';
+      return 'Хамгийн багад 1 цифр шаардлагатай.';
     }
 
     if (!value.contains(RegExp(r'[A-Z]'))) {
-      return 'Password must contain at least one uppercase letter';
+      return 'Хамгийн багадаа 1 том үсэг шаардлагатай.';
     }
 
     if (!value.contains(RegExp(r'[!@#$%^&*,.<>|?/=+]'))) {
-      return 'Password must contain at least one special character';
+      return 'Хамгийн багадаа 1 тэмдэгт ашиглаарай.';
     }
 
     return null;
@@ -50,13 +50,13 @@ class Validator {
 
   static String? validatePhoneNumber(String? value) {
     if (value == null || value.isEmpty) {
-      return 'Phone number is required';
+      return 'Хоосон байж болохгүй.';
     }
 
     final phoneRegExp = RegExp(r'^\d{8}$');
 
     if (!phoneRegExp.hasMatch(value)) {
-      return 'Invalid phone number';
+      return 'Утасны дугаар буруу байна.';
     }
     return null;
   }

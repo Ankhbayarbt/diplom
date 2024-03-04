@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:ffi';
 
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:ecommerce/common/widgets/loaders/loaders.dart';

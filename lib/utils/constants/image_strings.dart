@@ -19,5 +19,6 @@ class AImages {
   // Success Screen Images
   static const String succesScreenImage = "assets/images/onBoardingImage1.png";
 
-  static const String docerAnimation = "assets/images/onBoardingImage1.png";
+  // Success Animation
+  static const String successAnimation = "assets/animations/success.gif";
 }
