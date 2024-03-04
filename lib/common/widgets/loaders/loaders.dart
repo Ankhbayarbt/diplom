@@ -33,18 +33,14 @@ class ALoaders {
   }
 
   static successSnackBar({required title, message = '', duration = 3}) {
-    Get.snackbar(
-      title,
-      message,
-      isDismissible: true,
-      shouldIconPulse: true,
-      colorText: Colors.white,
-      backgroundColor: AColors.primary,
-      snackPosition: SnackPosition.BOTTOM,
-      duration: Duration(seconds: duration),
-      margin: const EdgeInsets.all(10),
-      icon: const Icon(Iconsax.check, color: AColors.white),
-    );
+    Get.snackbar(title, message,
+        isDismissible: true,
+        shouldIconPulse: true,
+        colorText: Colors.white,
+        backgroundColor: AColors.primary,
+        snackPosition: SnackPosition.BOTTOM,
+        duration: Duration(seconds: duration),
+        margin: const EdgeInsets.all(10));
   }
 
   static warningSnackBar({required title, message = '', duration = 3}) {
@@ -58,7 +54,6 @@ class ALoaders {
       snackPosition: SnackPosition.BOTTOM,
       duration: Duration(seconds: duration),
       margin: const EdgeInsets.all(20),
-      icon: const Icon(Iconsax.warning_2, color: AColors.white),
     );
   }
 
@@ -73,7 +68,6 @@ class ALoaders {
       snackPosition: SnackPosition.BOTTOM,
       duration: Duration(seconds: duration),
       margin: const EdgeInsets.all(20),
-      icon: const Icon(Iconsax.warning_2, color: AColors.white),
     );
   }
 }

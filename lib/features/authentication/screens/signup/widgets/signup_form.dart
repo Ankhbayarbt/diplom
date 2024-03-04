@@ -112,9 +112,6 @@ class SignUpForm extends StatelessWidget {
               const SizedBox(width: ASizes.spaceBtwItems),
               Text.rich(TextSpan(children: [
                 TextSpan(
-                    text: '${ATexts.iAgreeTo} ',
-                    style: Theme.of(context).textTheme.bodySmall),
-                TextSpan(
                   text: ATexts.privacyPolicy,
                   style: Theme.of(context).textTheme.bodyMedium!.apply(
                         color: dark ? AColors.white : AColors.black,
@@ -123,16 +120,8 @@ class SignUpForm extends StatelessWidget {
                       ),
                 ),
                 TextSpan(
-                    text: ' ${ATexts.and} ',
+                    text: ' ${ATexts.iAgreeTo} ',
                     style: Theme.of(context).textTheme.bodySmall),
-                TextSpan(
-                  text: ATexts.termOfUse,
-                  style: Theme.of(context).textTheme.bodyMedium!.apply(
-                        color: dark ? AColors.white : AColors.black,
-                        decoration: TextDecoration.underline,
-                        decorationColor: dark ? AColors.white : AColors.black,
-                      ),
-                ),
               ]))
             ],
           ),

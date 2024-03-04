@@ -3,7 +3,6 @@ import 'package:ecommerce/data/repositories/authentication/authentication_reposi
 import 'package:ecommerce/data/repositories/user/user_repository.dart';
 import 'package:ecommerce/features/authentication/models/UserModel.dart';
 import 'package:ecommerce/features/authentication/screens/signup/verify_email.dart';
-import 'package:ecommerce/utils/constants/image_strings.dart';
 import 'package:ecommerce/utils/helpers/network_manager.dart';
 import 'package:ecommerce/utils/popups/full_screen_loader.dart';
 import 'package:flutter/material.dart';
@@ -26,19 +25,19 @@ class SignUpController extends GetxController {
   Future<void> signUp() async {
     try {
       // Start Loading
-      AFullScreenLoader.openLoadingDialog(
-          'We are processing your information ...', AImages.docerAnimation);
+      // AFullScreenLoader.openLoadingDialog(
+      //     'We are processing your information ...', AImages.docerAnimation);
 
       // Check internet connection
       final isConnected = await NetworkManager.instance.isConnected();
       if (!isConnected) {
-        AFullScreenLoader.stopLoading();
+        // AFullScreenLoader.stopLoading();
         return;
       }
 
       // Form validation
       if (!signupFormKey.currentState!.validate()) {
-        AFullScreenLoader.stopLoading();
+        // AFullScreenLoader.stopLoading();
         return;
       }
 
@@ -74,9 +73,9 @@ class SignUpController extends GetxController {
           message: "Your account has been successfully created");
 
       // Move to verify Email Screen
-      Get.to(() => const VerifyEmailScreen());
+      Get.to(() => VerifyEmailScreen(email: email.text.trim()));
     } catch (e) {
-      AFullScreenLoader.stopLoading();
+      // AFullScreenLoader.stopLoading();
       ALoaders.errorSnackBar(title: 'Oh Snap!', message: e.toString());
     }
   }
