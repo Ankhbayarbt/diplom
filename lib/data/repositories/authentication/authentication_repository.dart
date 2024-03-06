@@ -6,7 +6,6 @@ import 'package:ecommerce/utils/exceptions/firebase_auth_exceptions.dart';
 import 'package:ecommerce/utils/exceptions/firebase_exceptions.dart';
 import 'package:ecommerce/utils/exceptions/platform_exceptions.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
@@ -124,8 +123,21 @@ class AuthenticationRepository extends GetxController {
       throw 'Алдаа гарлаа. Та дахин оролдоно уу.';
     }
   }
-  /* -------------- Email & Password Sign in ------------ */
-  /* -------------- Federated Identity & Social Sign in ------------ */
+
+  // Forget Password
+  Future<void> sendPasswordResetEmail(String email) async {
+    try {
+      await _auth.sendPasswordResetEmail(email: email);
+    } on FirebaseAuthException catch (e) {
+      throw AFirebaseAuthException(e.code).message;
+    } on FirebaseException catch (e) {
+      throw AFirebaseException(e.code).message;
+    } on PlatformException catch (e) {
+      throw APlatformException(e.code).message;
+    } catch (e) {
+      throw 'Алдаа гарлаа. Та дахин оролдоно уу.';
+    }
+  }
 
   // Log out User
   Future<void> logout() async {

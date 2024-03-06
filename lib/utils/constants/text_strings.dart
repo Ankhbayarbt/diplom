@@ -12,13 +12,16 @@ class ATexts {
   static const String signupTitle = "Бүртгүүлэх";
 
   // OnBoarding
-  static const String onBoardingTitle1 = "OnBoarding1";
-  static const String onBoardingTitle2 = "OnBoarding2";
-  static const String onBoardingTitle3 = "OnBoarding3";
+  static const String onBoardingTitle1 = "Толь бичиг";
+  static const String onBoardingTitle2 = "Үг бүтээх";
+  static const String onBoardingTitle3 = "Б. Анхбаяр";
 
-  static const String onBoardingSubTitle1 = "OnBoarding Subtitle1";
-  static const String onBoardingSubTitle2 = "OnBoarding Subtitle2";
-  static const String onBoardingSubTitle3 = "OnBoarding Subtitle3";
+  static const String onBoardingSubTitle1 =
+      "Анагаах ухааны гадаад үг, хэллэгийг Монгол хэл рүү хөрвүүлэх боломж";
+  static const String onBoardingSubTitle2 =
+      "Өөрийн хүссэн үгээ нэмж үг бүтээх боломж";
+  static const String onBoardingSubTitle3 =
+      "МУИС-МТЭС-ийн Програм хангамжийн 4-р курсын оюутан";
 
   // Authentication Form Text
   static const String firstName = "Овог";
@@ -42,13 +45,15 @@ class ATexts {
   static const String and = "бас";
 
   // Forget Password
-  static const String forgetPasswordTitle = "Forget Password Title";
-  static const String forgetPasswordSubtitle = "Forget Password SubTitle";
+  static const String forgetPasswordTitle = "Нууц үгээ мартсан уу?";
+  static const String forgetPasswordSubtitle =
+      "Бүртгэлтэй и-мэйл хаягаа ашиглан нуууц үгээ шинэчлээрэй.";
   static const String submit = "Илгээх";
 
   // Reset Password
-  static const String resetPasswordTitle = "Reset Password Title";
-  static const String resetPasswordSubtitle = "Reset Password SubTitle";
+  static const String resetPasswordTitle = "";
+  static const String resetPasswordSubtitle =
+      "Нууц үг солих линк таны мэйл хаяг руу илгээсэн тул мэйлээ шалгана уу.";
 
   // Verify Email
   static const String confirmEmail = "Мэйл хаягаа баталгаажуулаарай";
@@ -56,7 +61,7 @@ class ATexts {
       " хаяг руу баталгаажуулах линк илгээлээ. Та мэйлээ шалгана уу.";
 
   static const String continuee = "Үргэлжлүүлэх";
-  static const String done = "Done";
+  static const String done = "Болсон";
 
   // Success Screen
   static const String yourAccountCreatedTitle = "Бүртгэл амжилттай.";
