@@ -5,12 +5,11 @@ class ATexts {
   static const String homeAppBarTitle = "Hello";
 
   // Login
-  static const String loginTitle = "Login Title";
-  static const String loginSubTitle = "Login SubTitle";
+  static const String loginTitle = "Нэвтрэх хэсэг";
+  static const String loginSubTitle = "Тавтай морил";
 
   // Title
-  static const String signupTitle = "SignUp Title";
-  static const String signupSubTitle = "SignUp SubTitle";
+  static const String signupTitle = "Бүртгүүлэх";
 
   // OnBoarding
   static const String onBoardingTitle1 = "OnBoarding1";
@@ -52,14 +51,13 @@ class ATexts {
   static const String resetPasswordSubtitle = "Reset Password SubTitle";
 
   // Verify Email
-  static const String confirmEmail = "Мейл хаягаа баталгаажуулаарай";
-  static const String confirmEmailSubtitle = "Confirm Email Subtitle";
+  static const String confirmEmail = "Мэйл хаягаа баталгаажуулаарай";
+  static const String confirmEmailSubtitle =
+      " хаяг руу баталгаажуулах линк илгээлээ. Та мэйлээ шалгана уу.";
 
-  static const String continuee = "Continue";
+  static const String continuee = "Үргэлжлүүлэх";
   static const String done = "Done";
 
   // Success Screen
-  static const String yourAccountCreatedTitle = "Your Account Created";
-  static const String yourAccountCreatedSubTitle =
-      "Your Account Created Subtitle";
+  static const String yourAccountCreatedTitle = "Бүртгэл амжилттай.";
 }

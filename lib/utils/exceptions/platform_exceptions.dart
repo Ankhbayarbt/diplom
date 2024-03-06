@@ -13,7 +13,10 @@ class APlatformException implements Exception {
         return 'Дотоод алдаа гарлаа. Та дахин оролдоно уу.';
       case 'invalid-verification-code':
         return 'Баталгаажуулах код буруу байна.';
+      case 'network-request-failed':
+        return 'Интернет холболтоо шалгана уу.';
       default:
+        print(code.toString());
         return 'Platform алдаа гарлаа: ${code.toString()}';
     }
   }

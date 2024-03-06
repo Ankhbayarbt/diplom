@@ -18,6 +18,7 @@ class AFirebaseException implements Exception {
       case 'wrong-password':
         return 'Нууц үг буруу байна.';
       default:
+        print(code.toString());
         return 'Firebase алдаа гарлаа: ${code.toString()}';
     }
   }

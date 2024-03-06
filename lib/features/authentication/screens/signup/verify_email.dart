@@ -1,7 +1,5 @@
-import 'package:ecommerce/common/widgets/success_screen/success_screen.dart';
 import 'package:ecommerce/data/repositories/authentication/authentication_repository.dart';
 import 'package:ecommerce/features/authentication/controllers/signup/verify_email_controller.dart';
-import 'package:ecommerce/features/authentication/screens/login/login.dart';
 import 'package:ecommerce/utils/constants/image_strings.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_strings.dart';
@@ -37,7 +35,7 @@ class VerifyEmailScreen extends StatelessWidget {
               // Image
               Image(
                 image: const AssetImage(AImages.deliveredEmailImage),
-                width: HelperFunctions.screenWidth(),
+                width: HelperFunctions.screenWidth() * 0.6,
               ),
               const SizedBox(height: ASizes.spaceBtwSections),
 
@@ -49,24 +47,18 @@ class VerifyEmailScreen extends StatelessWidget {
               ),
               const SizedBox(height: ASizes.spaceBtwItems),
               Text(
-                email ?? '',
-                style: Theme.of(context).textTheme.headlineMedium,
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: ASizes.spaceBtwItems),
-              Text(
-                ATexts.confirmEmailSubtitle,
+                email.toString() + ATexts.confirmEmailSubtitle,
                 style: Theme.of(context).textTheme.labelMedium,
                 textAlign: TextAlign.center,
               ),
+
               const SizedBox(height: ASizes.spaceBtwSections),
 
               // Buttons
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () =>
-                      Get.to(() => controller.checkEmailVerificationStatus()),
+                  onPressed: () => controller.checkEmailVerificationStatus(),
                   child: const Text(ATexts.continuee),
                 ),
               ),

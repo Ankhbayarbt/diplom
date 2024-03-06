@@ -1,7 +1,6 @@
 import 'package:ecommerce/features/authentication/controllers/login/login_controller.dart';
 import 'package:ecommerce/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:ecommerce/features/authentication/screens/signup/signup.dart';
-import 'package:ecommerce/navigation_menu.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:ecommerce/utils/validators/validation.dart';
@@ -35,8 +34,7 @@ class LoginForm extends StatelessWidget {
             Obx(
               () => TextFormField(
                 controller: controller.password,
-                validator: (value) =>
-                    Validator.validateEmptyText('Нууц үг', value),
+                validator: (value) => Validator.validateEmptyText(value),
                 obscureText: controller.hidePassword.value,
                 decoration: InputDecoration(
                   labelText: ATexts.password,
@@ -95,7 +93,7 @@ class LoginForm extends StatelessWidget {
                 child: const Text(ATexts.createAccount),
               ),
             ),
-            const SizedBox(height: ASizes.spaceBtwSections),
+            const SizedBox(height: ASizes.spaceBtwItems),
           ],
         ),
       ),
