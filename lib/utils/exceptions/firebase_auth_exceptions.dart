@@ -1,4 +1,4 @@
-import 'package:get/get.dart';
+import 'package:flutter/foundation.dart';
 
 class AFirebaseAuthException implements Exception {
   final String code;
@@ -24,7 +24,7 @@ class AFirebaseAuthException implements Exception {
       case 'too-many-requests':
         return 'Түр хүлээгээд дахин оролдоно уу.';
       default:
-        print(code.toString());
+        if (kDebugMode) print(code.toString());
         return 'FirebaseAuth Алдаа гарлаа: ${code.toString()}';
     }
   }
