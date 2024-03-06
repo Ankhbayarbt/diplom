@@ -25,26 +25,27 @@ class SignUpController extends GetxController {
   Future<void> signUp() async {
     try {
       // Start Loading
-      // AFullScreenLoader.openLoadingDialog(
-      //     'We are processing your information ...', AImages.docerAnimation);
+      AFullScreenLoader().startLoading();
 
       // Check internet connection
       final isConnected = await NetworkManager.instance.isConnected();
       if (!isConnected) {
-        // AFullScreenLoader.stopLoading();
+        AFullScreenLoader().stopLoading();
         return;
       }
 
       // Form validation
       if (!signupFormKey.currentState!.validate()) {
-        // AFullScreenLoader.stopLoading();
+        AFullScreenLoader().stopLoading();
         return;
       }
 
       // Privacy Policy Check
       if (!privacyPolicy.value) {
+        AFullScreenLoader().stopLoading();
         ALoaders.warningSnackBar(
-            title: 'Accept privacy policy', message: 'something');
+            title: 'Үйлчилгээний нөхцөлийг зөвшөөрсөн байх шаардлагатай.',
+            message: 'Үйлчилгээний нөхцөлтэй уншиж танилцаарай.');
         return;
       }
 
@@ -66,7 +67,8 @@ class SignUpController extends GetxController {
       final userRepository = Get.put(UserRepository());
       await userRepository.saveUserRecord(newUser);
 
-      AFullScreenLoader.stopLoading();
+      AFullScreenLoader().stopLoading();
+
       // Show success message
       ALoaders.successSnackBar(
           title: 'Congratulations!',
@@ -75,7 +77,7 @@ class SignUpController extends GetxController {
       // Move to verify Email Screen
       Get.to(() => VerifyEmailScreen(email: email.text.trim()));
     } catch (e) {
-      // AFullScreenLoader.stopLoading();
+      AFullScreenLoader().stopLoading();
       ALoaders.errorSnackBar(title: 'Oh Snap!', message: e.toString());
     }
   }

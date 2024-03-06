@@ -1,7 +1,7 @@
 class Validator {
-  static String? validateEmptyText(String? fieldName, String? value) {
+  static String? validateEmptyText(String? value) {
     if (value == null || value.isEmpty) {
-      return '$fieldName хоосон байж болохгүй.';
+      return 'Хоосон байж болохгүй.';
     }
     return null;
   }

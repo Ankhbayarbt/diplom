@@ -28,8 +28,7 @@ class SignUpForm extends StatelessWidget {
               Expanded(
                 child: TextFormField(
                   controller: controller.firstName,
-                  validator: (value) =>
-                      Validator.validateEmptyText('First Name', value),
+                  validator: (value) => Validator.validateEmptyText(value),
                   expands: false,
                   decoration: const InputDecoration(
                       labelText: ATexts.firstName,
@@ -40,8 +39,7 @@ class SignUpForm extends StatelessWidget {
               Expanded(
                 child: TextFormField(
                   controller: controller.lastName,
-                  validator: (value) =>
-                      Validator.validateEmptyText('Last Name', value),
+                  validator: (value) => Validator.validateEmptyText(value),
                   expands: false,
                   decoration: const InputDecoration(
                       labelText: ATexts.lastName,

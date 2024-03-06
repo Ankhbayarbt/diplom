@@ -4,7 +4,6 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:ecommerce/common/widgets/loaders/loaders.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:get/state_manager.dart';
 
 class NetworkManager extends GetxController {
   static NetworkManager get instance => Get.find();
@@ -24,7 +23,7 @@ class NetworkManager extends GetxController {
   Future<void> _updateConnectionStatus(ConnectivityResult result) async {
     _connectivityStatus.value = result;
     if (_connectivityStatus.value == ConnectivityResult.none) {
-      ALoaders.warningSnackBar(title: 'No Internet connection');
+      ALoaders.customToast(message: 'Интернет холболтоо шалгана уу.');
     }
   }
 

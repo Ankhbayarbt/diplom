@@ -6,13 +6,9 @@ import 'package:flutter/material.dart';
 
 class SuccesScreen extends StatelessWidget {
   const SuccesScreen(
-      {super.key,
-      required this.image,
-      required this.title,
-      required this.subtitle,
-      this.onPressed});
+      {super.key, required this.image, required this.title, this.onPressed});
 
-  final String image, title, subtitle;
+  final String image, title;
   final VoidCallback? onPressed;
 
   @override
@@ -37,11 +33,7 @@ class SuccesScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: ASizes.spaceBtwSections),
-              Text(
-                subtitle,
-                style: Theme.of(context).textTheme.labelMedium,
-                textAlign: TextAlign.center,
-              ),
+
               const SizedBox(height: ASizes.spaceBtwSections),
 
               // Buttons

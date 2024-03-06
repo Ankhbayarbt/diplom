@@ -24,7 +24,7 @@ class VerifyEmailController extends GetxController {
     try {
       await AuthenticationRepository.instance.sendEmailVerification();
       ALoaders.successSnackBar(
-          title: 'И-мэил илгээлээ.', message: 'Та цахим шуудангаа шалгана уу.');
+          title: 'И-мэйл илгээлээ.', message: 'Та цахим шуудангаа шалгана уу.');
     } catch (e) {
       ALoaders.errorSnackBar(title: 'Oh snap!', message: e.toString());
     }
@@ -40,7 +40,6 @@ class VerifyEmailController extends GetxController {
         Get.off(() => SuccesScreen(
               image: AImages.successAnimation,
               title: ATexts.yourAccountCreatedTitle,
-              subtitle: ATexts.yourAccountCreatedSubTitle,
               onPressed: () =>
                   AuthenticationRepository.instance.screenRedirect(),
             ));
@@ -55,7 +54,6 @@ class VerifyEmailController extends GetxController {
       Get.off(() => SuccesScreen(
             image: AImages.successAnimation,
             title: ATexts.yourAccountCreatedTitle,
-            subtitle: ATexts.yourAccountCreatedSubTitle,
             onPressed: () => AuthenticationRepository.instance.screenRedirect(),
           ));
     }
