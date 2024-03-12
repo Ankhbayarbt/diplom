@@ -1,5 +1,5 @@
-import 'package:ecommerce/features/app/screens/home/home.dart';
-import 'package:ecommerce/features/app/screens/profile/profile.dart';
+import 'package:ecommerce/app/screens/home/home.dart';
+import 'package:ecommerce/app/screens/profile/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';

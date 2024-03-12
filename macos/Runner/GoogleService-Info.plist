@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>927655894637-f4e12nfp9h0439atpbpnesme50b6csh7.apps.googleusercontent.com</string>
+	<string>927655894637-m7a450skbo10s7vk9b0g7ggv36m8soj9.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.927655894637-f4e12nfp9h0439atpbpnesme50b6csh7</string>
+	<string>com.googleusercontent.apps.927655894637-m7a450skbo10s7vk9b0g7ggv36m8soj9</string>
 	<key>ANDROID_CLIENT_ID</key>
 	<string>927655894637-v1q79fhf1466rrucfo1o3sui3bb08c12.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
@@ -15,7 +15,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.ecommerce</string>
+	<string>com.example.ecommerce.RunnerTests</string>
 	<key>PROJECT_ID</key>
 	<string>heal-eb1ef</string>
 	<key>STORAGE_BUCKET</key>
@@ -31,7 +31,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:927655894637:ios:656a502d91911367dc2964</string>
+	<string>1:927655894637:ios:23c46baa50821849dc2964</string>
 	<key>DATABASE_URL</key>
 	<string>https://heal-eb1ef-default-rtdb.asia-southeast1.firebasedatabase.app</string>
 </dict>

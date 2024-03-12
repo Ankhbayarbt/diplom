@@ -25,10 +25,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -52,6 +49,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '927655894637',
     projectId: 'heal-eb1ef',
     authDomain: 'heal-eb1ef.firebaseapp.com',
+    databaseURL: 'https://heal-eb1ef-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'heal-eb1ef.appspot.com',
   );
 
@@ -60,6 +58,7 @@ class DefaultFirebaseOptions {
     appId: '1:927655894637:android:7cc591896d6bdaabdc2964',
     messagingSenderId: '927655894637',
     projectId: 'heal-eb1ef',
+    databaseURL: 'https://heal-eb1ef-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'heal-eb1ef.appspot.com',
   );
 
@@ -68,8 +67,22 @@ class DefaultFirebaseOptions {
     appId: '1:927655894637:ios:656a502d91911367dc2964',
     messagingSenderId: '927655894637',
     projectId: 'heal-eb1ef',
+    databaseURL: 'https://heal-eb1ef-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'heal-eb1ef.appspot.com',
+    androidClientId: '927655894637-v1q79fhf1466rrucfo1o3sui3bb08c12.apps.googleusercontent.com',
     iosClientId: '927655894637-f4e12nfp9h0439atpbpnesme50b6csh7.apps.googleusercontent.com',
     iosBundleId: 'com.example.ecommerce',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyCLKF1404i7CS99LrCdBwzavCPlTy5XW3Q',
+    appId: '1:927655894637:ios:23c46baa50821849dc2964',
+    messagingSenderId: '927655894637',
+    projectId: 'heal-eb1ef',
+    databaseURL: 'https://heal-eb1ef-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'heal-eb1ef.appspot.com',
+    androidClientId: '927655894637-v1q79fhf1466rrucfo1o3sui3bb08c12.apps.googleusercontent.com',
+    iosClientId: '927655894637-m7a450skbo10s7vk9b0g7ggv36m8soj9.apps.googleusercontent.com',
+    iosBundleId: 'com.example.ecommerce.RunnerTests',
   );
 }

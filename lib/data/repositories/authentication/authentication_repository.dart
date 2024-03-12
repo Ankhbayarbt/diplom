@@ -1,6 +1,6 @@
-import 'package:ecommerce/features/authentication/screens/login/login.dart';
-import 'package:ecommerce/features/authentication/screens/onboarding/onboarding.dart';
-import 'package:ecommerce/features/authentication/screens/signup/verify_email.dart';
+import 'package:ecommerce/app/screens/login/login.dart';
+import 'package:ecommerce/app/screens/onboarding/onboarding.dart';
+import 'package:ecommerce/app/screens/signup/verify_email.dart';
 import 'package:ecommerce/navigation_menu.dart';
 import 'package:ecommerce/utils/exceptions/firebase_auth_exceptions.dart';
 import 'package:ecommerce/utils/exceptions/firebase_exceptions.dart';
@@ -18,6 +18,8 @@ class AuthenticationRepository extends GetxController {
   // Variables
   final deviceStorage = GetStorage();
   final _auth = FirebaseAuth.instance;
+
+  User? get authUser => _auth.currentUser;
 
   // Called from main.dart on app launch
   @override
@@ -47,9 +49,7 @@ class AuthenticationRepository extends GetxController {
     }
   }
 
-  /* -------------- Email & Password Sign in ------------ */
-
-  /// LOGIN
+  /// Login with email and password
   Future<UserCredential> loginWithEmailAndPassword(
       String email, String password) async {
     try {
@@ -66,7 +66,7 @@ class AuthenticationRepository extends GetxController {
     }
   }
 
-  /// GOOGLE AUTHENTICATION
+  /// Sign in with Google authentication
   Future<UserCredential?> signInWithGoogle() async {
     try {
       final GoogleSignInAccount? userAccount = await GoogleSignIn().signIn();
@@ -92,7 +92,7 @@ class AuthenticationRepository extends GetxController {
     }
   }
 
-  ///  REGISTER
+  ///  Register with email and password
   Future<UserCredential> registerWithEmailAndPassword(
       String email, String password) async {
     try {

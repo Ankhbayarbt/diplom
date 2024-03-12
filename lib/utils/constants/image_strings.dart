@@ -21,4 +21,6 @@ class AImages {
 
   // Success Animation
   static const String successAnimation = "assets/animations/success.gif";
+
+  static const String profile = "assets/images/user.jpeg";
 }

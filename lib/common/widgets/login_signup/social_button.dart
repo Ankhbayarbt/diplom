@@ -1,4 +1,4 @@
-import 'package:ecommerce/features/authentication/controllers/login/login_controller.dart';
+import 'package:ecommerce/app/controllers/login/login_controller.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/image_strings.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';

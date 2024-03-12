@@ -15,6 +15,7 @@ class ATexts {
   static const String onBoardingTitle1 = "Толь бичиг";
   static const String onBoardingTitle2 = "Үг бүтээх";
   static const String onBoardingTitle3 = "Б. Анхбаяр";
+  static const String skip = "Алгасах";
 
   static const String onBoardingSubTitle1 =
       "Анагаах ухааны гадаад үг, хэллэгийг Монгол хэл рүү хөрвүүлэх боломж";
@@ -26,7 +27,7 @@ class ATexts {
   // Authentication Form Text
   static const String firstName = "Овог";
   static const String lastName = "Нэр";
-  static const String email = "И-мэйл хаяг";
+  static const String email = "И-мэйл";
   static const String password = "Нууц үг";
   static const String newPassword = "Шинэ нууц үг";
   static const String userName = "Username";
@@ -65,4 +66,13 @@ class ATexts {
 
   // Success Screen
   static const String yourAccountCreatedTitle = "Бүртгэл амжилттай.";
+
+  // Home Screen
+  static const String searchWord = "Хайх үгээ бичнэ үү.";
+  static const String hello = "Сайн байна уу?";
+
+  // Profile Screen
+  static const String userInfo = 'Хэрэглэгчийн мэдээлэл';
+  static const String settings = 'Тохиргоо';
+  static const String logout = 'Гарах';
 }
