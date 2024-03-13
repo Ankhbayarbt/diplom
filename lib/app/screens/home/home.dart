@@ -1,8 +1,14 @@
 import 'package:ecommerce/app/screens/home/widgets/header_widget.dart';
 import 'package:ecommerce/app/screens/home/widgets/search_container.dart';
+import 'package:ecommerce/common/widgets/app/row_tail.dart';
+import 'package:ecommerce/data/repositories/words/word_repository.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_strings.dart';
+import 'package:firebase_database/firebase_database.dart';
+import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:iconsax/iconsax.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -10,8 +16,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SingleChildScrollView(
-      child: Column(
+      body: Column(
         children: [
           HeaderContainer(
             child: Padding(
@@ -33,8 +38,25 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
+          Expanded(
+            child: Padding(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: ASizes.defaultSpace),
+              child: FirebaseAnimatedList(
+                query: Get.put(WordRepository()).dbref,
+                itemBuilder: (context, snapshot, animation, index) {
+                  return Card(
+                      child: RowTail(
+                          icon: Iconsax.book,
+                          title: snapshot.key.toString(),
+                          value:
+                              snapshot.child('translation').value.toString()));
+                },
+              ),
+            ),
+          ),
         ],
       ),
-    ));
+    );
   }
 }

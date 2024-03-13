@@ -10,11 +10,11 @@ import 'package:get/get.dart';
 class WordRepository extends GetxController {
   static WordRepository get instance => Get.find();
 
-  final _dbref = FirebaseDatabase.instance.ref();
+  final dbref = FirebaseDatabase.instance.ref('words');
 
   Future<WordModel> readWord({required String word}) async {
     try {
-      final snapshot = await _dbref.child('words/$word').get();
+      final snapshot = await dbref.child('words/$word').get();
       if (snapshot.exists) {
         return WordModel.fromSnapshot(snapshot);
       } else {
@@ -33,7 +33,7 @@ class WordRepository extends GetxController {
 
   Future<List<WordModel>> readAllWords() async {
     try {
-      final snapshot = await _dbref.get();
+      final snapshot = await dbref.get();
       final wordList = <WordModel>[];
 
       if (snapshot.exists) {
