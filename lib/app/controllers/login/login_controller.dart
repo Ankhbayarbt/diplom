@@ -21,9 +21,11 @@ class LoginController extends GetxController {
 
   @override
   void onInit() {
-    email.text = localStorage.read('REMEMBER_ME_EMAIL');
-    password.text = localStorage.read('REMEMBER_ME_PASSWORD');
-    if (email.text.isNotEmpty) rememberMe.value = true;
+    // if (rememberMe.isTrue) {
+    //   email.text = localStorage.read('REMEMBER_ME_EMAIL');
+    //   password.text = localStorage.read('REMEMBER_ME_PASSWORD');
+    // }
+    // if (email.text.isNotEmpty) rememberMe.value = true;
     super.onInit();
   }
 
@@ -53,8 +55,8 @@ class LoginController extends GetxController {
       }
 
       // Login User
-      final userCredentials = await AuthenticationRepository.instance
-          .loginWithEmailAndPassword(email.text.trim(), password.text.trim());
+      // final userCredentials = await AuthenticationRepository.instance
+      //     .loginWithEmailAndPassword(email.text.trim(), password.text.trim());
 
       AFullScreenLoader().stopLoading();
       AuthenticationRepository.instance.screenRedirect();

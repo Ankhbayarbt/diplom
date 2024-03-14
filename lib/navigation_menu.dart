@@ -1,5 +1,6 @@
 import 'package:ecommerce/app/screens/home/home.dart';
 import 'package:ecommerce/app/screens/profile/profile.dart';
+import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -15,14 +16,16 @@ class NavigationMenu extends StatelessWidget {
         () => NavigationBar(
           selectedIndex: controller.selectedIndex.value,
           elevation: 0,
+          // backgroundColor: AColors.grey,
           onDestinationSelected: (index) =>
               controller.selectedIndex.value = index,
           destinations: const [
-            NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
-            NavigationDestination(icon: Icon(Iconsax.shop), label: 'Add word'),
+            NavigationDestination(icon: Icon(Icons.home), label: ATexts.home),
+            NavigationDestination(icon: Icon(Icons.add), label: ATexts.addWord),
             NavigationDestination(
-                icon: Icon(Iconsax.heart), label: 'Saved words'),
-            NavigationDestination(icon: Icon(Iconsax.user), label: 'Profile'),
+                icon: Icon(Iconsax.heart), label: ATexts.savedWords),
+            NavigationDestination(
+                icon: Icon(Iconsax.user), label: ATexts.profile),
           ],
         ),
       ),

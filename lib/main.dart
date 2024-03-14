@@ -1,6 +1,7 @@
 import 'package:ecommerce/app.dart';
 import 'package:ecommerce/data/repositories/authentication/authentication_repository.dart';
 import 'package:ecommerce/firebase_options.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:get/get.dart';
@@ -23,6 +24,8 @@ Future<void> main() async {
       .then(
     (FirebaseApp value) => Get.put(AuthenticationRepository()),
   );
+
+  FirebaseDatabase.instance.setPersistenceEnabled(true);
 
   runApp(const App());
 }

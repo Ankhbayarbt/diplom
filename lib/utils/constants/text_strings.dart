@@ -75,4 +75,10 @@ class ATexts {
   static const String userInfo = 'Хэрэглэгчийн мэдээлэл';
   static const String settings = 'Тохиргоо';
   static const String logout = 'Гарах';
+
+  // Navigation Menu
+  static const String home = 'Нүүр';
+  static const String addWord = 'Үг нэмэх';
+  static const String savedWords = 'Хадгалсан үгс';
+  static const String profile = 'Профайл';
 }
